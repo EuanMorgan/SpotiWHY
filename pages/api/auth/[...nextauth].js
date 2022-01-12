@@ -35,7 +35,7 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-  secret: 'sdfdsdsgf',
+  secret: process.env.JWT_SECRET,
   pages: {
     signIn: '/login',
   },
